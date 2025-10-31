@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만주어 사전</title>
+    <script src="manchu-converter.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .search-section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .search-box input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #f4c430;
+            box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.2);
+        }
+
+        .search-box button {
+            padding: 12px 25px;
+            background: #f4c430;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background: #d4a017;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: #666;
+        }
+
+        select {
+            padding: 8px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #f4c430;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .checkbox-label input {
+            cursor: pointer;
+        }
+
+        .filters-right {
+            margin-left: auto;
+        }
+
+        .tag-filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag-btn {
+            padding: 6px 12px;
+            background: #f0f0f0;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .tag-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .search-preview {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            /* font-feature-settings: "vert" 1; */
+            word-break: break-all;
+            font-family: 'Noto Sans Mongolian', serif;
+            direction: ltr;
+            display: none;
+        }
+
+        .search-preview.active {
+            display: flex;
+        }
+
+        .search-preview-label {
+            font-size: 0.9em;
+            color: #666;
+            flex-shrink: 0;
+        }
+
+        .preview-card {
+            background: #f5f5f5;
+            border-left: 4px solid #f4c430;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: none;
+            align-items: flex-start;
+            gap: 20px;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .preview-card.active {
+            display: flex;
+        }
+
+        .preview-manchu {
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            /* font-feature-settings: "vert" 1; */
+            word-break: keep-all;
+            font-family: 'Noto Sans Mongolian', san-serif;
+            direction: ltr;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.5;
+            min-height: 50px;
+            max-height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            overflow: auto;
+        }
+
+        .results-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        .results-section {
+            display: grid;
+            gap: 15px;
+        }
+
+        .entry-card {
+            background: #f9f9f9;
+            border-left: 4px solid #f4c430;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            animation: fadeIn 0.3s ease-out;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .entry-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateX(5px);
+        }
+
+        .headword-section {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex-shrink: 0;
+            direction: ltr;
+        }
+
+        .headword-manchu {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #333;
+            font-family: 'Noto Sans Mongolian', san-serif;
+            line-height: 1.5;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            /* font-feature-settings: "vert" 1; */
+            word-break: keep-all;
+            direction: ltr;
+        }
+
+        .headword-latin {
+            font-size: 0.85em;
+            color: #999;
+            font-family: 'Courier New', monospace;
+            font-weight: normal;
+            text-orientation: mixed;
+        }
+
+        .entry-content {
+            flex: 1;
+        }
+
+        .romanization {
+            color: #999;
+            font-size: 0.95em;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .meanings {
+            margin: 12px 0;
+            line-height: 1.8;
+        }
+
+        .meaning-group {
+            margin-bottom: 8px;
+        }
+
+        .meaning-number {
+            display: inline-block;
+            font-size: 0.8em;
+            color: #999;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+
+        .meaning-lang {
+            color: #f4c430;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .meaning-text {
+            color: #333;
+        }
+
+        .examples {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .examples-title {
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .example {
+            background: white;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            border-left: 3px solid #f4c430;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .example-manchu-wrapper {
+            flex-shrink: 0;
+            direction: ltr;
+        }
+
+        .example-manchu {
+            font-family: 'Noto Sans Mongolian', san-serif;
+            color: #333;
+            font-weight: 500;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            /* font-feature-settings: "vert" 1; */
+            word-break: keep-all;
+            display: inline-block;
+            line-height: 1.5;
+            direction: ltr;
+        }
+
+        .example-content {
+            flex: 1;
+        }
+
+        .example-latin {
+            font-family: 'Courier New', monospace;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-translation {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .tags {
+            margin-top: 10px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .no-results-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        mark {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .search-section {
+                padding: 15px;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box input {
+                min-width: 100%;
+            }
+
+            .entry-card {
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            .headword-section {
+                width: 100%;
+                margin-bottom: 12px;
+                text-align: left;
+                direction: ltr;
+            }
+
+            .headword-manchu {
+                font-size: 1.3em;
+            }
+
+            .entry-content {
+                width: 100%;
+            }
+
+            .example {
+                flex-direction: column;
+            }
+
+            .example-manchu-wrapper {
+                width: 100%;
+                margin-bottom: 8px;
+                text-align: left;
+                direction: ltr;
+            }
+
+            .example-content {
+                width: 100%;
+            }
+
+            .filters-right {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 만주어 사전</h1>
+            <p>Manchu Dictionary</p>
+        </header>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="검색: 만주어, 한글, 영어, 로마자..." autocomplete="off"
+                    oninput="updateSearchPreview()">
+                <button onclick="search()">검색</button>
+            </div>
+
+            <div class="filters">
+                <span class="filter-label">필터:</span>
+                <select id="langFilter" onchange="search()">
+                    <option value="">모든 언어</option>
+                    <option value="ko">한국어만</option>
+                    <option value="en">영어만</option>
+                </select>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="exampleSearch" onchange="search()">
+                    <span>예문에서도 검색</span>
+                </label>
+                <div class="filters-right">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="manchuInput" onchange="toggleManchuInput()">
+                        <span>만주어로 입력</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="tag-filters" id="tagFilters"></div>
+
+            <div class="results-info" id="resultsInfo"></div>
+        </div>
+
+        <div class="preview-card" id="previewCard">
+            <div class="preview-manchu" id="previewManchu"></div>
+        </div>
+
+        <div class="results-section" id="results"></div>
+    </div>
+
+    <script>
+        let dictionaryData = [];
+        let allTags = new Set();
+        let selectedTags = new Set();
+        let manchuInputMode = false;
+
+        function toggleManchuInput() {
+            manchuInputMode = document.getElementById('manchuInput').checked;
+            const searchInput = document.getElementById('searchInput');
+            const previewCard = document.getElementById('previewCard');
+
+            if (manchuInputMode) {
+                searchInput.placeholder = "만주어로 입력...";
+                searchInput.value = "";
+            } else {
+                searchInput.placeholder = "검색: 만주어, 한글, 영어, 로마자...";
+                searchInput.value = "";
+                previewCard.classList.remove('active');
+            }
+            updateSearchPreview();
+        }
+
+        function updateSearchPreview() {
+            const searchInput = document.getElementById('searchInput');
+            const previewManchu = document.getElementById('previewManchu');
+            const previewCard = document.getElementById('previewCard');
+
+            if (!manchuInputMode || searchInput.value === '') {
+                previewManchu.textContent = '';
+                previewCard.classList.remove('active');
+                return;
+            }
+
+            const latinText = searchInput.value.toLowerCase();
+            const manchuText = convertLatinToManchu(latinText);
+            previewManchu.textContent = manchuText;
+            previewCard.classList.add('active');
+        }
+
+        async function loadDictionary() {
+            try {
+                const response = await fetch('dictionary-data.json');
+                const data = await response.json();
+                dictionaryData = data.entries;
+
+                dictionaryData.forEach(entry => {
+                    if (entry.tags) {
+                        entry.tags.forEach(tag => allTags.add(tag));
+                    }
+                });
+
+                renderTagFilters();
+                updateStats();
+                displayAllEntries();
+            } catch (error) {
+                console.error('데이터 로드 실패:', error);
+                document.getElementById('results').innerHTML =
+                    '<div class="no-results"><div class="no-results-icon">❌</div><p>데이터를 불러올 수 없습니다.</p></div>';
+            }
+        }
+
+        function renderTagFilters() {
+            const container = document.getElementById('tagFilters');
+            allTags.forEach(tag => {
+                const btn = document.createElement('button');
+                btn.className = 'tag-btn';
+                btn.textContent = tag;
+                btn.onclick = () => toggleTag(tag, btn);
+                container.appendChild(btn);
+            });
+        }
+
+        function toggleTag(tag, element) {
+            if (selectedTags.has(tag)) {
+                selectedTags.delete(tag);
+                element.classList.remove('active');
+            } else {
+                selectedTags.add(tag);
+                element.classList.add('active');
+            }
+            search();
+        }
+
+        function normalizeSearchTerm(term) {
+            if (term === 'i') {
+                return ['i', '-i'];
+            }
+            return [term];
+        }
+
+        function matchesSearchTerm(text, searchTerms) {
+            if (!text) return false;
+            const lowerText = text.toLowerCase();
+            return searchTerms.some(term => lowerText.includes(term));
+        }
+
+        function search() {
+            let searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+
+            if (manchuInputMode && searchTerm) {
+                searchTerm = convertManchuToLatin(searchTerm).toLowerCase();
+            }
+
+            const langFilter = document.getElementById('langFilter').value;
+            const exampleSearch = document.getElementById('exampleSearch').checked;
+
+            let results = dictionaryData.filter(entry => entry && entry.headword);
+
+            if (searchTerm) {
+                const searchTerms = normalizeSearchTerm(searchTerm);
+
+                results = results.filter(entry => {
+                    const headwordMatch = matchesSearchTerm(entry.headword, searchTerms);
+                    const romanMatch = matchesSearchTerm(entry.romanization, searchTerms);
+
+                    const meaningMatch = entry.meanings && entry.meanings.some(m =>
+                        matchesSearchTerm(m.text, searchTerms)
+                    );
+
+                    let exampleMatch = false;
+                    if (exampleSearch && entry.examples) {
+                        exampleMatch = entry.examples.some(ex =>
+                            matchesSearchTerm(ex.manchu, searchTerms) ||
+                            matchesSearchTerm(ex.translation, searchTerms)
+                        );
+                    }
+
+                    return headwordMatch || romanMatch || meaningMatch || exampleMatch;
+                });
+
+                results.sort((a, b) => {
+                    const searchTerms = normalizeSearchTerm(searchTerm);
+                    const aHeadword = matchesSearchTerm(a.headword, searchTerms) ? 0 :
+                        matchesSearchTerm(a.romanization, searchTerms) ? 1 : 2;
+                    const bHeadword = matchesSearchTerm(b.headword, searchTerms) ? 0 :
+                        matchesSearchTerm(b.romanization, searchTerms) ? 1 : 2;
+
+                    return aHeadword - bHeadword;
+                });
+            }
+
+            if (langFilter) {
+                results = results.filter(entry =>
+                    entry.meanings && entry.meanings.some(m => m.lang === langFilter)
+                );
+            }
+
+            if (selectedTags.size > 0) {
+                results = results.filter(entry => {
+                    if (!entry.tags) return false;
+                    return Array.from(selectedTags).every(tag =>
+                        entry.tags.includes(tag)
+                    );
+                });
+            }
+
+            displayResults(results, searchTerm);
+        }
+
+        function displayResults(results, searchTerm) {
+            const resultsContainer = document.getElementById('results');
+            const resultsInfo = document.getElementById('resultsInfo');
+
+            resultsInfo.textContent = `${results.length}개의 결과`;
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>검색 결과가 없습니다</h3>
+                        <p>다른 검색어나 필터를 시도해보세요.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            resultsContainer.innerHTML = results.map(entry =>
+                createEntryCard(entry, searchTerm)
+            ).join('');
+        }
+
+        function createEntryCard(entry, searchTerm = '') {
+            if (!entry || !entry.headword) {
+                return '';
+            }
+
+            const langFilter = document.getElementById('langFilter').value;
+            let filteredMeanings = entry.meanings || [];
+
+            if (langFilter) {
+                filteredMeanings = filteredMeanings.filter(m => m.lang === langFilter);
+            }
+
+            let meaningIndex = { ko: 0, en: 0 };
+
+            const meanings = filteredMeanings
+                .map(m => {
+                    meaningIndex[m.lang]++;
+                    return `
+                    <div class="meaning-group">
+                        <span class="meaning-number">${meaningIndex[m.lang]}</span>
+                        <span class="meaning-lang">[${m.lang.toUpperCase()}]</span>
+                        <span class="meaning-text">${formatMeaning(highlightText(m.text, searchTerm))}</span>
+                    </div>
+                `;
+                })
+                .join('');
+
+            const examples = (entry.examples && entry.examples.length > 0) ? `
+                <div class="examples">
+                    <div class="examples-title">예문:</div>
+                    ${entry.examples.map(ex => {
+                const manchuText = ex && ex.manchu ? ex.manchu.toLowerCase() : '';
+                const translationText = ex && ex.translation ? ex.translation : '';
+                const convertedManchu = manchuText ? convertLatinToManchu(manchuText) : '';
+
+                return `
+                        <div class="example">
+                            ${convertedManchu ? `<div class="example-manchu-wrapper"><div class="example-manchu">${highlightText(convertedManchu, searchTerm)}</div></div>` : ''}
+                            <div class="example-content">
+                                ${manchuText ? `<div class="example-latin">${highlightText(manchuText, searchTerm)}</div>` : ''}
+                                ${translationText ? `<div class="example-translation">→ ${highlightText(translationText, searchTerm)}</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+            }).join('')}
+                </div>
+            ` : '';
+
+            const tags = (entry.tags && entry.tags.length > 0) ? `
+                <div class="tags">
+                    ${entry.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+            ` : '';
+
+            const manchuHeadword = entry.headword ? convertLatinToManchu(entry.headword) : '';
+
+            return `
+                <div class="entry-card">
+                    <div class="headword-section">
+                        ${manchuHeadword ? `<div class="headword-manchu">${highlightText(manchuHeadword, searchTerm)}</div>` : ''}
+                    </div>
+                    <div class="entry-content">
+                        <div class="romanization">${entry.romanization || ''}</div>
+                        <div class="meanings">${meanings}</div>
+                        ${examples}
+                        ${tags}
+                    </div>
+                </div>
+            `;
+        }
+
+        function highlightText(text, searchTerm) {
+            if (!text || !searchTerm) return text;
+
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            return text.replace(regex, '<mark>$1</mark>');
+        }
+
+        function formatMeaning(text) {
+            return text.replace(/`([^`]+)`/g, '<em>$1</em>');
+        }
+
+        function displayAllEntries() {
+            displayResults(dictionaryData);
+        }
+
+        function updateStats() {
+            const stats = document.getElementById('stats');
+            stats.textContent = `📚 총 ${dictionaryData.length}개의 항목`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDictionary();
+
+            document.getElementById('searchInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    search();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
