@@ -54,9 +54,11 @@ function convertLatinToManchu(latinText) {
         .replaceAll('+', '')
         .replaceAll('ng', 'N')
         .replaceAll('S', 'x')
+        .replaceAll('š', 'x')
         .replaceAll('jy', 'Jy')
         .replaceAll('cy', 'Cy')
         .replaceAll('@', 'v')
+        .replaceAll('ū', 'v')
         .replaceAll('ts', '\u186E') // ᡮ
         .replaceAll('dz', '\u186F') // ᡯ
         .replaceAll('..', '\u1809') // ᠉ (Must be before single '.')
