@@ -9,7 +9,7 @@ function convertLatinToManchu(latinText) {
         'e': '\u185D', // ᡝ
         'i': '\u1873', // ᡳ
         'o': '\u1823', // ᠣ
-        'u': '\u1824', // ᡠ
+        'u': '\u1860', // ᡠ
         'v': '\u1861', // ᡡ (from original 'v' or '@')
         'n': '\u1828', // ᠨ
         'N': '\u1829', // ᠩ (from 'ng')
