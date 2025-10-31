@@ -597,7 +597,7 @@
                 return;
             }
 
-            const latinText = searchInput.value.toLowerCase();
+            const latinText = searchInput.value;
             const manchuText = convertLatinToManchu(latinText);
             previewManchu.textContent = manchuText;
             previewCard.classList.add('active');
