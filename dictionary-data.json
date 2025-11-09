@@ -1214,7 +1214,7 @@
         },
         {
           "lang": "ko",
-          "text": "acambi의 사동형"
+          "text": "`acambi`의 사동형"
         },
         {
           "lang": "en",
@@ -1414,6 +1414,294 @@
           "manchu": "ACABUNGGA BOJI",
           "translation_en": "contract",
           "translation": "계약"
+        },
+        {
+          "manchu": "ACABUNGGA FUKJINGGA HERGEN",
+          "translation_en": "an ancient style of Chinese calligraphy",
+          "translation": "고대 중국 서체"
+        },
+        {
+          "manchu": "ACABUNGGA INENGGI",
+          "translation_en": "a day on which the yin and yang elements harmonize",
+          "translation": "음양이 조화로운 날"
+        },
+        {
+          "manchu": "ACABUNGGA JUNGKEN",
+          "translation_en": "chimes",
+          "translation": "편경, 편종"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "headword": "acalambi",
+      "romanization": "ACALAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to act together, to act mutually"
+        },
+        {
+          "lang": "ko",
+          "text": "함께 행동하다, 상호 작용하다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACALAME SIMNEMBI",
+          "translation_en": "to assemble all the candidates in the capital for the Imperial Examination, to go for the Imperial Examination",
+          "translation": "과거를 위해 수도의 모든 응시자를 모으다, 과거 시험을 보러 가다"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "headword": "acambi",
+      "romanization": "ACAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to meet, to get together, to come together, to combine"
+        },
+        {
+          "lang": "ko",
+          "text": "만나다, 모이다, 합치다"
+        },
+        {
+          "lang": "en",
+          "text": "to visit (the home of the deceased after a funeral)"
+        },
+        {
+          "lang": "ko",
+          "text": "(장례 후 고인의 집을) 방문하다"
+        },
+        {
+          "lang": "en",
+          "text": "to be in agreement, to be in harmony, to be on friendly terms, to make up after a quarrel"
+        },
+        {
+          "lang": "ko",
+          "text": "동의하다, 조화를 이루다, 우호적인 관계이다, 다툼 후에 화해하다"
+        },
+        {
+          "lang": "en",
+          "text": "to engage in sexual intercourse, to copulate, to mate"
+        },
+        {
+          "lang": "ko",
+          "text": "성교하다, 교미하다, 짝짓다"
+        },
+        {
+          "lang": "en",
+          "text": "to correspond to, to match, to fit, to be equal to"
+        },
+        {
+          "lang": "ko",
+          "text": "해당하다, 일치하다, 맞다, 동등하다"
+        },
+        {
+          "lang": "en",
+          "text": "to be fitting, to be appropriate"
+        },
+        {
+          "lang": "ko",
+          "text": "알맞다, 적절하다"
+        },
+        {
+          "lang": "en",
+          "text": "(after the conditional converb) should, ought, must"
+        },
+        {
+          "lang": "ko",
+          "text": "(조건 부동사형 뒤에서) ...해야 한다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACARA BE TUWAME",
+          "translation_en": "in accordance with what is appropriate",
+          "translation": "적절한 것에 따라서"
+        },
+        {
+          "manchu": "ACARAKV",
+          "translation_en": "inappropriate, unfitting",
+          "translation": "부적절한, 맞지 않는"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "headword": "acamjabumbi",
+      "romanization": "ACAMJABUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus. of acamjambi"
+        },
+        {
+          "lang": "ko",
+          "text": "acamjambi의 사동형"
+        },
+        {
+          "lang": "en",
+          "text": "to put together, to assemble"
+        },
+        {
+          "lang": "ko",
+          "text": "조립하다, 모으다"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "headword": "acamjambi",
+      "romanization": "ACAMJAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to come together in oneplace, to pool together (money)"
+        },
+        {
+          "lang": "ko",
+          "text": "한곳에 모이다, (돈을) 함께 모으다"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "headword": "acamjangga",
+      "romanization": "ACAMJANGGA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "composite"
+        },
+        {
+          "lang": "ko",
+          "text": "합성의"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACAMJANGGA BESERGEN",
+          "translation_en": "a large bed composed of a number of individual beds put together",
+          "translation": "여러 개의 개별 침대를 합쳐 만든 큰 침대"
+        },
+        {
+          "manchu": "ACAMJANGGA MULAN",
+          "translation_en": "a large bench composed of several individual smaller benches",
+          "translation": "여러 개의 작은 벤치를 합쳐 만든 큰 벤치"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "headword": "acan",
+      "romanization": "ACAN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "harmony, concord, union, meeting, juncture"
+        },
+        {
+          "lang": "ko",
+          "text": "조화, 일치, 결합, 만남, 접합"
+        },
+        {
+          "lang": "en",
+          "text": "joined"
+        },
+        {
+          "lang": "ko",
+          "text": "연결된"
+        },
+        {
+          "lang": "en",
+          "text": "domino piece"
+        },
+        {
+          "lang": "ko",
+          "text": "도미노 조각"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACAN BEIDESI",
+          "translation_en": "Second Class Subprefect, BH 849A",
+          "translation": "通判"
+        },
+        {
+          "manchu": "ACAN GIRANGGI",
+          "translation_en": "shoulder bone",
+          "translation": "어깨뼈"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "headword": "acanambi",
+      "romanization": "ACANAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to go to meet"
+        },
+        {
+          "lang": "ko",
+          "text": "만나러 가다"
+        },
+        {
+          "lang": "en",
+          "text": "to fit, to suit, to be to the point, to be correct"
+        },
+        {
+          "lang": "ko",
+          "text": "맞다, 적합하다, 요점에 맞다, 올바르다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACANAHA SERE HERGEN I TEMGETU",
+          "translation_en": "a tally consisting of two halves with characters written across it",
+          "translation": "글자가 가로질러 쓰인 두 조각으로 이루어진 부신"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "headword": "acandumbi/acanumbi",
+      "romanization": "ACANDUMBI/ACANUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to meet together"
+        },
+        {
+          "lang": "ko",
+          "text": "함께 만나다"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "headword": "acangga",
+      "romanization": "ACANGGA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "harmonious, fitting"
+        },
+        {
+          "lang": "ko",
+          "text": "조화로운, 알맞은"
+        },
+        {
+          "lang": "en",
+          "text": "a tally, an identification token"
+        },
+        {
+          "lang": "ko",
+          "text": "부신, 신분증표"
         }
       ]
     }
