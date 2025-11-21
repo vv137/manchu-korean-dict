@@ -1703,6 +1703,719 @@
           "lang": "ko",
           "text": "부신, 신분증표"
         }
+      ],
+      "examples": [
+        {
+          "manchu": "ACANGGA INENGGI",
+          "translation_en": "a day that the heaven's stems, earth's branches, and the five elements all coincide favorably",
+          "translation": "천간, 지지, 오행이 모두 좋게 일치하는 날 (길일)"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "headword": "acanjimbi",
+      "romanization": "ACANJIMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to come to meet, to come for an audience"
+        },
+        {
+          "lang": "ko",
+          "text": "만나러 오다, 알현하러 오다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACANJIME ISANJIRE TULERGI GURUN I BITHE UBALIYAMBURE KUREN",
+          "translation_en": "Residence for Envoys of the Four Tributary States, BH 392",
+          "translation": ". 會同四夷譯館, 會同四譯館, 조선사행을 비롯한 외국 사신이 조공하면 북경에서 숙식하였던 객사이며, 예부에서 관장하였다. (회동관/사역관)"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "headword": "acibumbi",
+      "romanization": "ACIBUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus. of acimbi"
+        },
+        {
+          "lang": "ko",
+          "text": "`acimbi`의 사동형"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "headword": "aciha",
+      "romanization": "ACIHA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "load, burden"
+        },
+        {
+          "lang": "ko",
+          "text": "짐, 부담"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACIHA FULMIYEN",
+          "translation_en": "baggage, freight",
+          "translation": "수하물, 화물"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "headword": "acihi",
+      "romanization": "ACIHI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "stake, share"
+        },
+        {
+          "lang": "ko",
+          "text": "판돈, 몫"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACIHI JAFAMBI",
+          "translation_en": "to hold a stake or share in a game of chance",
+          "translation": "도박에서 판돈이나 몫을 걸다(잡다)"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "headword": "acihilabumbi",
+      "romanization": "ACIHILABUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus. of acihilambi"
+        },
+        {
+          "lang": "ko",
+          "text": "`acihilambi`의 사동형"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "headword": "acihilambi",
+      "romanization": "ACIHILAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to divide equally"
+        },
+        {
+          "lang": "ko",
+          "text": "똑같이 나누다"
+        },
+        {
+          "lang": "en",
+          "text": "to form in pairs, to perform in pairs"
+        },
+        {
+          "lang": "ko",
+          "text": "짝을 짓다, 짝을 지어 행하다"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "headword": "acilambi",
+      "romanization": "ACILAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "in wrestling, to throw by grabbing the neck"
+        },
+        {
+          "lang": "ko",
+          "text": "(씨름에서) 목을 감아 던지다"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "headword": "acimbi",
+      "romanization": "ACIMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "(-ka) to move slightly"
+        },
+        {
+          "lang": "ko",
+          "text": "(-ka) 약간 움직이다"
+        },
+        {
+          "lang": "en",
+          "text": "(-ha) to load"
+        },
+        {
+          "lang": "ko",
+          "text": "(-ha) 짐을 싣다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACIRE KIYOO",
+          "translation_en": "a baggage litter",
+          "translation": "짐을 싣는 가마(교자)"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "headword": "acin",
+      "romanization": "ACIN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "load, burden"
+        },
+        {
+          "lang": "ko",
+          "text": "짐, 부담"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACIN TEMEN",
+          "translation_en": "pack camel",
+          "translation": "짐 싣는 낙타"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "headword": "acindumbi",
+      "romanization": "ACINDUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to load together"
+        },
+        {
+          "lang": "ko",
+          "text": "함께 짐을 싣다"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "headword": "acinggiyabumbi",
+      "romanization": "ACINGGIYABUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus. of acinggiyambi"
+        },
+        {
+          "lang": "ko",
+          "text": "`acinggiyambi`의 사동형"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "headword": "acinggiyambi",
+      "romanization": "ACINGGIYAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to move slightly, to shake"
+        },
+        {
+          "lang": "ko",
+          "text": "약간 움직이다, 흔들다"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "headword": "acu",
+      "romanization": "ACU",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "ouch! (said when burned by something hot)"
+        },
+        {
+          "lang": "ko",
+          "text": "아뜨거! (뜨거운 것에 데었을 때)"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "headword": "acu facu",
+      "romanization": "ACU FACU",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "with loving tenderness"
+        },
+        {
+          "lang": "ko",
+          "text": "애틋하게, 다정하게"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "headword": "acuhiyadabumbi",
+      "romanization": "ACUHIYADABUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus./pass. of acuhiyadambi"
+        },
+        {
+          "lang": "ko",
+          "text": "`acuhiyadambi`의 사동/피동형"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "headword": "acuhiyadambi",
+      "romanization": "ACUHIYADAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to slander"
+        },
+        {
+          "lang": "ko",
+          "text": "비방하다, 헐뜯다"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "headword": "acuhiyan",
+      "romanization": "ACUHIYAN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "slander"
+        },
+        {
+          "lang": "ko",
+          "text": "비방, 중상모략"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "headword": "acuhvn",
+      "romanization": "ACUHVN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "harmonious, peaceful, well"
+        },
+        {
+          "lang": "ko",
+          "text": "조화로운, 평화로운, 안녕한"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACUHVN AKV",
+          "translation_en": "1. unharmonious 2. out of sorts",
+          "translation": "1. 부조화한 2. 몸이 찌뿌둥한(불편한)"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "headword": "acun",
+      "romanization": "ACUN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "confused"
+        },
+        {
+          "lang": "ko",
+          "text": "혼란스러운, 어수선한"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ACUN CACUN",
+          "translation_en": "confused, erratic",
+          "translation": "뒤죽박죽인, 종잡을 수 없는"
+        },
+        {
+          "manchu": "ACUN DE CACUN",
+          "translation_en": "confused, erratic",
+          "translation": "뒤죽박죽으로, 종잡을 수 없이"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "headword": "ada",
+      "romanization": "ADA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "plank, board"
+        },
+        {
+          "lang": "ko",
+          "text": "널빤지, 판자"
+        },
+        {
+          "lang": "en",
+          "text": "raft"
+        },
+        {
+          "lang": "ko",
+          "text": "뗏목"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ADA FICAKV",
+          "translation_en": "musical pipes consisting of sixteen sections",
+          "translation": "16개의 관으로 구성된 관악기(배소, 排簫)"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "headword": "adabumbi",
+      "romanization": "ADABUMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "caus. of adambi"
+        },
+        {
+          "lang": "ko",
+          "text": "`adambi`의 사동형"
+        },
+        {
+          "lang": "en",
+          "text": "to attach, to send along with"
+        },
+        {
+          "lang": "ko",
+          "text": "덧붙이다, 함께 보내다, 첨부하다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ADABUFI WESIMBURE BITHE",
+          "translation_en": "a copy of a memorial presented to the throne",
+          "translation": "황제에게 올리는 상소문의 사본(부본)"
+        },
+        {
+          "manchu": "ADABUHA AMBAN",
+          "translation_en": "an accompanying official",
+          "translation": "수행 관리, 동행하는 관리"
+        },
+        {
+          "manchu": "ADABUHA WESIMBURE BITHEI KUNGGERI",
+          "translation_en": "archives section",
+          "translation": "副本科, 기록 보관소"
+        },
+        {
+          "manchu": "ADABUME WECEMBI",
+          "translation_en": "to make an offering in the ancestral temple when the tablet of a newly deceased was placed among the ancestral tablets",
+          "translation": "새로 죽은 사람의 신위를 조상 신위들 사이에 안치할 때 사당에서 제사를 지내다(부제, 祔祭)"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "headword": "adada ebebe",
+      "romanization": "ADADA EBEBE",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "an exclamation of surprise"
+        },
+        {
+          "lang": "ko",
+          "text": "놀라움의 감탄사"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "headword": "adada edede",
+      "romanization": "ADADA EDEDE",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "(onom.) the sound of teeth chattering from cold"
+        },
+        {
+          "lang": "ko",
+          "text": "(의성어) 추워서 이가 딱딱 부딪히는 소리"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "headword": "adage",
+      "romanization": "ADAGE",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "exclamation of affection used when patting an old person or a child on the back"
+        },
+        {
+          "lang": "ko",
+          "text": "노인이나 아이의 등을 두드릴 때 쓰는 애정 어린 감탄사"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "headword": "adaha",
+      "romanization": "ADAHA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "a chest or trunk on a wagon"
+        },
+        {
+          "lang": "ko",
+          "text": "수레에 싣는 궤짝 또는 트렁크"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "headword": "adaki",
+      "romanization": "ADAKI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "neighbor"
+        },
+        {
+          "lang": "ko",
+          "text": "이웃"
+        },
+        {
+          "lang": "en",
+          "text": "neighboring, adjacent"
+        },
+        {
+          "lang": "ko",
+          "text": "이웃하는, 인접한"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ADAKI BOO",
+          "translation_en": "neighboring house or family",
+          "translation": "이웃집, 이웃 가족"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "headword": "adakv",
+      "romanization": "ADAKV",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "assistant"
+        },
+        {
+          "lang": "ko",
+          "text": "조수, 보조자"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "headword": "adali",
+      "romanization": "ADALI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "like, same"
+        },
+        {
+          "lang": "ko",
+          "text": "~와 같은, 동일한"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "headword": "adalikan",
+      "romanization": "ADALIKAN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "somewhat like, rather similar"
+        },
+        {
+          "lang": "ko",
+          "text": "약간 비슷한, 꽤 유사한"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "headword": "adaliliyan",
+      "romanization": "ADALILIYAN",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "somewhat like"
+        },
+        {
+          "lang": "ko",
+          "text": "약간 비슷한"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "headword": "adalingga",
+      "romanization": "ADALINGGA",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "similar"
+        },
+        {
+          "lang": "ko",
+          "text": "유사한"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "headword": "adalixambi",
+      "romanization": "ADALIXAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to resemble, to be like (used with de)"
+        },
+        {
+          "lang": "ko",
+          "text": "닮다, ~와 같다 (`de`와 함께 사용)"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "headword": "adambi",
+      "romanization": "ADAMBI",
+      "meanings": [
+        {
+          "lang": "en",
+          "text": "to accompany, to stand by"
+        },
+        {
+          "lang": "ko",
+          "text": "동행하다, 곁에 서다"
+        },
+        {
+          "lang": "en",
+          "text": "to be attached to, to be close to, to be next to"
+        },
+        {
+          "lang": "ko",
+          "text": "붙어 있다, 가까이 있다, 옆에 있다"
+        },
+        {
+          "lang": "en",
+          "text": "to form the encirclement at a battue"
+        },
+        {
+          "lang": "ko",
+          "text": "몰이 사냥에서 포위망을 형성하다"
+        },
+        {
+          "lang": "en",
+          "text": "to stitch together"
+        },
+        {
+          "lang": "ko",
+          "text": "함께 꿰매다"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ADAFI KADALARA AMBAN",
+          "translation_en": "Director of the Imperial Clan Court, BH 60",
+          "translation": "종인부(宗人府) 영종인(領宗人), 중국 명/청대 황족과 왕족의 종친 사무를 관리하는 최고 책임자. 보통 친왕이 임명되었음."
+        },
+        {
+          "manchu": "ADAFI SIMNERE HAFAN",
+          "translation_en": "assistant examiner",
+          "translation": "부시관(副考官), 과거 시험의 출제와 채점을 담당하던 관리"
+        },
+        {
+          "manchu": "ADAHA BAICARA DOOLI HAFAN",
+          "translation_en": "assistant intendant",
+          "translation": "첨사도(僉使道)"
+        },
+        {
+          "manchu": "ADAHA BITHEI DA",
+          "translation_en": "Reader of the Academy, BH 194",
+          "translation": "시독학사(侍讀學士)"
+        },
+        {
+          "manchu": "ADAHA GIYANGNARA BITHEI DA",
+          "translation_en": "Expositor of the Academy, BH 195",
+          "translation": "시강학사(侍講學士)"
+        },
+        {
+          "manchu": "ADAHA GIYANGNARA HAFAN",
+          "translation_en": "subexpositor, BH 197",
+          "translation": "시강(侍講)"
+        },
+        {
+          "manchu": "ADAHA HAFAN",
+          "translation_en": "a hereditary title of the sixth grade, BH 944",
+          "translation": "경거도위(輕車都尉)"
+        },
+        {
+          "manchu": "ADAHA HVLARA BITHEI DA",
+          "translation_en": "Reader of the Academy, BH 194",
+          "translation": "시독학사(侍讀學士)"
+        },
+        {
+          "manchu": "ADAHA HVLARA HAFAN",
+          "translation_en": "Sub-reader of the Academy, BH 196",
+          "translation": "시독(侍讀)"
+        },
+        {
+          "manchu": "ADAHA KADALARA DA",
+          "translation_en": "Lieutenant-Colonel, BH 752A, 800",
+          "translation": "참장(參將)"
+        },
+        {
+          "manchu": "ADAHA TUKIYESI",
+          "translation_en": "a degree candidate entered on the secondary list, BH 629B",
+          "translation": "부방(副榜)"
+        }
       ]
     }
   ]
