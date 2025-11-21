@@ -335,32 +335,31 @@
             border-radius: 6px;
             border-left: 3px solid #f4c430;
             display: flex;
-            /* gap: 20px; */ /* <<< 제거됨 */
+            gap: 20px;
             align-items: flex-start;
         }
 
         .example-manchu-wrapper {
             flex-shrink: 0;
             direction: ltr;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            font-family: 'Noto Sans Mongolian', sans-serif;
         }
 
         .example-manchu {
-            font-family: 'Noto Sans Mongolian', san-serif;
+            font-family: 'Noto Sans Mongolian', sans-serif;
             color: #333;
             font-weight: 500;
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
-            /* font-feature-settings: "vert" 1; */
             word-break: keep-all;
-            display: inline-block;
+            display: block;
             line-height: 2.0;
             direction: ltr;
         }
 
         .example-content {
             flex: 1;
-            min-width: 0; /* Safari */
-            padding-left: 40px;
+            min-width: 0;
         }
 
         .example-latin {
@@ -503,7 +502,8 @@
 
             .example-content {
                 width: 100%;
-                padding-left: 0; /* <<< 모바일에서는 다시 0으로 */
+                padding-left: 0;
+                /* <<< 모바일에서는 다시 0으로 */
             }
 
             .filters-right {
