@@ -574,10 +574,10 @@
 
             if (manchuInputMode) {
                 searchInput.placeholder = "만주어로 입력...";
-                searchInput.value = "";
+                // Input value preserved
             } else {
                 searchInput.placeholder = "검색: 만주어, 한글, 영어, 로마자...";
-                searchInput.value = "";
+                // Input value preserved
                 previewCard.classList.remove('active');
             }
             updateSearchPreview();
