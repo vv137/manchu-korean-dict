@@ -684,7 +684,7 @@
                     if (exampleSearch && entry.examples) {
                         exampleMatch = entry.examples.some(ex =>
                             matchesSearchTerm(ex.manchu, searchTerms) ||
-                            matchesSearchTerm(ex.translation, searchTerms)
+                            matchesSearchTerm(ex.translation_ko, searchTerms)
                         );
                     }
 
@@ -774,7 +774,7 @@
                     <div class="examples-title">예문:</div>
                     ${entry.examples.map(ex => {
                 const manchuText = ex && ex.manchu ? ex.manchu.toLowerCase() : '';
-                const translationText = ex && ex.translation ? ex.translation : '';
+                const translationText = ex && ex.translation_ko ? ex.translation_ko : '';
                 const convertedManchu = manchuText ? convertLatinToManchu(manchuText) : '';
 
                 return `
