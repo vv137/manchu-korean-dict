@@ -1,4 +1,16 @@
 {
+  "meta": {
+    "id": "manchu-korean",
+    "name": "만주어-한국어 사전",
+    "name_en": "Manchu-Korean Dictionary",
+    "description": "만주어-한국어/영어 사전 데이터",
+    "languages": [
+      "mnc",
+      "ko",
+      "en"
+    ],
+    "version": "1.0.0"
+  },
   "entries": [
     {
       "id": 1,

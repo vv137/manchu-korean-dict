@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Sans Mongolian';
+    src: url('NotoSansMongolian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    animation: slideDown 0.6s ease-out;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.search-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+    animation: slideUp 0.6s ease-out;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #f4c430;
+    box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.2);
+}
+
+.search-box button {
+    padding: 12px 25px;
+    background: #f4c430;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #d4a017;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.filter-label {
+    font-weight: 600;
+    color: #666;
+}
+
+select {
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #f4c430;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.checkbox-label input {
+    cursor: pointer;
+}
+
+.filters-right {
+    margin-left: auto;
+}
+
+.tag-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag-btn {
+    padding: 6px 12px;
+    background: #f0f0f0;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
+
+.tag-btn:hover {
+    background: #e0e0e0;
+}
+
+.search-preview {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    word-break: break-all;
+    font-family: 'Noto Sans Mongolian', sans-serif;
+    direction: ltr;
+    display: none;
+}
+
+.search-preview.active {
+    display: flex;
+}
+
+.preview-card {
+    background: #f5f5f5;
+    border-left: 4px solid #f4c430;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: none;
+    align-items: flex-start;
+    gap: 20px;
+    animation: slideUp 0.3s ease-out;
+}
+
+.preview-card.active {
+    display: flex;
+}
+
+.preview-manchu {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    word-break: keep-all;
+    font-family: 'Noto Sans Mongolian', san-serif;
+    direction: ltr;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+    line-height: 2.0;
+    min-height: 50px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+}
+
+.results-info {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.results-section {
+    display: grid;
+    gap: 15px;
+}
+
+.entry-card {
+    background: #f9f9f9;
+    border-left: 4px solid #f4c430;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    animation: fadeIn 0.3s ease-out;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.entry-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.headword-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+    direction: ltr;
+}
+
+.headword-manchu {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Noto Sans Mongolian', san-serif;
+    line-height: 2.0;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    word-break: keep-all;
+    direction: ltr;
+}
+
+.headword-latin {
+    font-size: 0.85em;
+    color: #999;
+    font-family: 'Courier New', monospace;
+    font-weight: normal;
+    text-orientation: mixed;
+}
+
+.entry-content {
+    flex: 1;
+}
+
+.romanization {
+    color: #999;
+    font-size: 0.95em;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.meanings {
+    margin: 12px 0;
+    line-height: 1.8;
+}
+
+.meaning-group {
+    margin-bottom: 8px;
+}
+
+.meaning-number {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #999;
+    margin-right: 6px;
+    font-weight: 600;
+}
+
+.meaning-lang {
+    color: #f4c430;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.meaning-text {
+    color: #333;
+}
+
+.examples {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.examples-title {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.example {
+    background: white;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 3px solid #f4c430;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.example-manchu-wrapper {
+    flex-shrink: 0;
+    direction: ltr;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-family: 'Noto Sans Mongolian', sans-serif;
+}
+
+.example-manchu {
+    font-family: 'Noto Sans Mongolian', sans-serif;
+    color: #333;
+    font-weight: 500;
+    word-break: keep-all;
+    display: block;
+    line-height: 2.0;
+    direction: ltr;
+}
+
+.example-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.example-latin {
+    font-family: 'Courier New', monospace;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.example-translation {
+    color: #666;
+    font-size: 0.95em;
+}
+
+.tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+    background: white;
+    border-radius: 8px;
+}
+
+.no-results-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.stats {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+mark {
+    background: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .search-section {
+        padding: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        min-width: 100%;
+    }
+
+    .entry-card {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .headword-section {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: left;
+        direction: ltr;
+    }
+
+    .headword-manchu {
+        font-size: 1.3em;
+    }
+
+    .entry-content {
+        width: 100%;
+    }
+
+    .example {
+        flex-direction: column;
+    }
+
+    .example-manchu-wrapper {
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: left;
+        direction: ltr;
+    }
+
+    .example-content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .filters-right {
+        margin-left: 0;
+        width: 100%;
+    }
+}
