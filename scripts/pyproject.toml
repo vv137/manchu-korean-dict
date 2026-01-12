@@ -1,0 +1,11 @@
+[project]
+name = "manchu-dict-tools"
+version = "0.1.0"
+description = "Manchu dictionary conversion tools"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl>=3.1.0",
+]
+
+[project.scripts]
+dict_converter = "dict_converter:main"

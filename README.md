@@ -13,10 +13,16 @@
 
 ## 파일 구성 (File Structure)
 
-*   `index.html`: 사전 애플리케이션의 메인 웹페이지입니다. UI 및 검색 로직이 포함되어 있습니다.
-*   `dictionary-data.json`: 사전 데이터를 담고 있는 JSON 파일입니다.
-*   `manchu-converter.js`: 로마자를 만주어 스크립트로 변환하거나 그 반대로 변환하는 로직을 담은 스크립트입니다.
-*   `NotoSansMongolian-Regular.woff`: 만주어 텍스트 표시를 위한 웹 폰트 파일입니다.
+```
+manchu-dict/
+├── index.html              # 메인 웹페이지
+├── styles.css              # 스타일시트
+├── manchu-converter.js     # 로마자 ↔ 만주어 변환
+├── NotoSansMongolian-Regular.woff  # 만주어 폰트
+└── dictionaries/           # 사전 데이터 디렉터리
+    ├── dictionaries.json   # 사전 목록 (manifest)
+    └── manchu-korean.json  # 사전 데이터 파일
+```
 
 ## 실행 방법 (How to Run)
 
@@ -36,47 +42,78 @@ python3 -m http.server 8080
 
 ## 데이터 구조 (Data Structure)
 
-`dictionary-data.json` 파일은 다음과 같은 JSON 구조를 가집니다.
+### 사전 목록 (dictionaries.json)
 
 ```json
 {
-  "entries": [
+  "dictionaries": [
     {
-      "id": 1,
-      "headword": "aba",
-      "romanization": "ABA",
-      "meanings": [
-        {
-          "lang": "en",
-          "text": "hunt, battue"
-        },
-        {
-          "lang": "ko",
-          "text": "사냥, 몰이"
-        }
-      ],
-      "examples": [
-        {
-          "manchu": "ABA SAHA",
-          "translation_en": "hunting",
-          "translation_ko": "사냥"
-        }
-      ],
-      "tags": ["tag1", "tag2"]
+      "id": "manchu-korean",
+      "file": "manchu-korean.json"
     }
   ]
 }
 ```
 
-*   **entries**: 단어 항목들의 배열입니다.
-    *   **id**: 각 항목의 고유 식별자(Integer)입니다.
-    *   **headword**: 표제어(String)입니다. 주로 로마자로 표기됩니다.
-    *   **romanization**: 표제어의 로마자 표기(String)입니다. 검색 및 정렬에 사용됩니다.
-    *   **meanings**: 단어의 의미를 담은 객체들의 배열입니다.
-        *   **lang**: 언어 코드 (`en`: 영어, `ko`: 한국어).
-        *   **text**: 뜻풀이 텍스트.
-    *   **examples** (Optional): 예문 객체들의 배열입니다.
-        *   **manchu**: 만주어 예문 (로마자 표기).
-        *   **translation_en**: 예문의 영어 번역.
-        *   **translation_ko**: 예문의 한국어 번역.
-    *   **tags** (Optional): 단어와 관련된 태그 문자열들의 배열입니다.
+### 사전 파일 형식
+
+각 사전 파일은 `meta` 레코드와 `entries` 배열을 포함합니다.
+
+```json
+{
+  "meta": {
+    "id": "manchu-korean",
+    "name": "만주어-한국어 사전",
+    "name_en": "Manchu-Korean Dictionary",
+    "description": "만주어-한국어/영어 사전 데이터",
+    "languages": ["mnc", "ko", "en"],
+    "version": "1.0.0"
+  },
+  "entries": [...]
+}
+```
+
+#### Meta 필드 설명
+
+| 필드 | 타입 | 설명 |
+|------|------|------|
+| `id` | String | 사전 고유 식별자 |
+| `name` | String | 사전 이름 (한국어) |
+| `name_en` | String | 사전 이름 (영어) |
+| `description` | String | 사전 설명 |
+| `languages` | Array | 포함된 언어 코드 (ISO 639) |
+| `version` | String | 버전 (Semantic Versioning) |
+
+### Entry 구조
+
+```json
+{
+  "id": 1,
+  "headword": "aba",
+  "romanization": "ABA",
+  "meanings": [
+    { "lang": "en", "text": "hunt, battue" },
+    { "lang": "ko", "text": "사냥, 몰이" }
+  ],
+  "examples": [
+    {
+      "manchu": "ABA SAHA",
+      "translation_en": "hunting",
+      "translation_ko": "사냥"
+    }
+  ],
+  "tags": ["tag1", "tag2"]
+}
+```
+
+#### Entry 필드 설명
+
+| 필드 | 타입 | 필수 | 설명 |
+|------|------|------|------|
+| `id` | Integer | ✓ | 항목 고유 식별자 |
+| `headword` | String | ✓ | 표제어 (로마자) |
+| `romanization` | String | ✓ | 로마자 표기 |
+| `meanings` | Array | ✓ | 뜻풀이 배열 (`lang`: 언어, `text`: 내용) |
+| `examples` | Array | | 예문 배열 |
+| `tags` | Array | | 태그 문자열 배열 |
+
