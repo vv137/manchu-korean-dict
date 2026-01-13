@@ -8,7 +8,7 @@
       "mnc",
       "ko"
     ],
-    "version": "2026-01-13v1"
+    "version": "1.0.0"
   },
   "entries": [
     {
@@ -248,7 +248,7 @@
     },
     {
       "id": 12,
-      "headword": "Abai",
+      "headword": "abai",
       "romanization": "ABAI",
       "meanings": [
         {
@@ -362,7 +362,7 @@
     },
     {
       "id": 20,
-      "headword": "Abatai",
+      "headword": "abatai",
       "romanization": "ABATAI",
       "meanings": [
         {
