@@ -719,7 +719,11 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "꺾다, 나뭇가지를 치다, 나뭇가지를 다듬다. =`abdambi`, `abdalambi`."
+          "text": "물건이 깨져 떨어지게 하다."
+        },
+        {
+          "lang": "ko",
+          "text": "화살의 깃이 떨어져 나가게 하다."
         }
       ]
     },
@@ -727,145 +731,377 @@
       "id": 51,
       "headword": "abtalambi",
       "romanization": "ABTALAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "꺾다, 나뭇가지를 치다, 나뭇가지를 다듬다. =`abdambi`, `abdalambi`."
+        }
+      ]
     },
     {
       "id": 52,
       "headword": "abtarambi",
       "romanization": "ABTARAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "큰소리로 떠들다, 성나서 떠들다, 화나서 소리지르다. =`atarambi`."
+        }
+      ]
     },
     {
       "id": 53,
       "headword": "abtakvlambi",
       "romanization": "ABTAKVLAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "급소를 맞추지 못하다, 치명적인 곳을 벗어나다."
+        }
+      ]
     },
     {
       "id": 54,
       "headword": "abu",
       "romanization": "ABU",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "거의, 하마터면. =`majige muxuhuri`, `muxuhuri`."
+        }
+      ]
     },
     {
       "id": 55,
       "headword": "abuci",
       "romanization": "ABUCI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(abka+jamuci) 天葵花. =`abuci ilha`."
+        }
+      ]
     },
     {
       "id": 56,
       "headword": "abuha",
       "romanization": "ABUHA",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "냉이, 제체(薺菜). 개체(箕寀)."
+        }
+      ]
     },
     {
       "id": 57,
       "headword": "abulimbi",
       "romanization": "ABULIMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "몹시 지치다."
+        }
+      ]
     },
     {
       "id": 58,
       "headword": "abuna",
       "romanization": "ABUNA",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "두루미냉이, 다닥냉이, 정력(葶藶)."
+        }
+      ]
     },
     {
       "id": 59,
       "headword": "aburambi",
       "romanization": "ABURAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "잡아당기다, 잡아당기며 싸우다."
+        },
+        {
+          "lang": "ko",
+          "text": "넘어지다, 고꾸라지다."
+        }
+      ]
     },
     {
       "id": 60,
       "headword": "aburanambi",
       "romanization": "ABURANAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "가서 마구 잡아당기다, 마구 잡아당기러 가다."
+        },
+        {
+          "lang": "ko",
+          "text": "가서 넘어지다."
+        }
+      ]
     },
     {
       "id": 61,
       "headword": "aburi",
       "romanization": "ABURI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "흉악한."
+        }
+      ]
     },
     {
       "id": 62,
       "headword": "aburingge",
       "romanization": "ABURINGGE",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "질투하는, 흉악한."
+        },
+        {
+          "lang": "ko",
+          "text": "질투하는 자, 흉악한 자."
+        }
+      ]
     },
     {
       "id": 63,
       "headword": "acabubumbi",
       "romanization": "ACABUBUMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(acabumbi의 사동형) 합하게 하다, 합치게 하다, 영합하게 하다, 모으게 하다."
+        }
+      ]
     },
     {
       "id": 64,
       "headword": "acabuki",
       "romanization": "ACABUKI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(acabumbi의 희망형) 합하자, 합하고 싶다, 대조하고 싶다, 영합하고 싶다."
+        },
+        {
+          "lang": "ko",
+          "text": "영합, 영합하는 사람, 아첨하는 것. =`acabukv`."
+        }
+      ]
     },
     {
       "id": 65,
       "headword": "acabukv",
       "romanization": "ACABUKV",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "영합, 영합하는 사람, 아첨하는 것. =`acabuki`."
+        }
+      ]
     },
     {
       "id": 66,
       "headword": "acabumbi",
       "romanization": "ACABUMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(acambi의 사동형) 만나게 하다, 회견(會見)시키다."
+        },
+        {
+          "lang": "ko",
+          "text": "합하다, 맞추다, 대조하다, 마주하다."
+        },
+        {
+          "lang": "ko",
+          "text": "비위 맞추다, 영합하다, 조화하다."
+        },
+        {
+          "lang": "ko",
+          "text": "혼례를 치르다."
+        },
+        {
+          "lang": "ko",
+          "text": "모으다, 엮다, 접목시키다. =`icabumbi`."
+        }
+      ]
     },
     {
       "id": 67,
       "headword": "acabun",
       "romanization": "ACABUN",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "보복, 복수, 果報, 應報."
+        },
+        {
+          "lang": "ko",
+          "text": "효험, 효과, 징조."
+        },
+        {
+          "lang": "ko",
+          "text": "적당, 적합, 마땅함, 기회."
+        },
+        {
+          "lang": "ko",
+          "text": "만남, 만나는 것."
+        },
+        {
+          "lang": "ko",
+          "text": "혼합(混合), 혼화(混和)."
+        },
+        {
+          "lang": "ko",
+          "text": "합의, 동의, 조화."
+        },
+        {
+          "lang": "ko",
+          "text": "속성, 특질."
+        },
+        {
+          "lang": "ko",
+          "text": "의무, 본분."
+        },
+        {
+          "lang": "ko",
+          "text": "이익, 보상 보수(報酬)."
+        },
+        {
+          "lang": "ko",
+          "text": "원인, 이유, 유래."
+        },
+        {
+          "lang": "ko",
+          "text": "因."
+        }
+      ]
     },
     {
       "id": 68,
       "headword": "acabungga",
       "romanization": "ACABUNGGA",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "마땅한, 상응한, 적합한."
+        }
+      ]
     },
     {
       "id": 69,
       "headword": "acalambi",
       "romanization": "ACALAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "함께 모이다."
+        }
+      ]
     },
     {
       "id": 70,
       "headword": "acambi",
       "romanization": "ACAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "만나다."
+        },
+        {
+          "lang": "ko",
+          "text": "화목하다, 화합하다, 조화하다."
+        },
+        {
+          "lang": "ko",
+          "text": "맞다, 마땅하다. [이 경우에 앞에 조사 -ci가 선행함.]"
+        },
+        {
+          "lang": "ko",
+          "text": "합하다, 맞추다."
+        },
+        {
+          "lang": "ko",
+          "text": "적합하다."
+        }
+      ]
     },
     {
       "id": 71,
       "headword": "acamjabumbi",
       "romanization": "ACAMJABUMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(acamjambi의 피동형/사동형) 집합되다, 모으다, 집합시키다, 한곳으로 모이게 하다."
+        }
+      ]
     },
     {
       "id": 72,
       "headword": "acamjambi",
       "romanization": "ACAMJAMBI",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "모이다, 한곳으로 모이다, 溱."
+        }
+      ]
     },
     {
       "id": 73,
       "headword": "acamjangga",
       "romanization": "ACAMJANGGA",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "합쳐진."
+        }
+      ]
     },
     {
       "id": 74,
       "headword": "acan",
       "romanization": "ACAN",
-      "meanings": []
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "만남, 모임, 회합."
+        },
+        {
+          "lang": "ko",
+          "text": "화합, 친화."
+        },
+        {
+          "lang": "ko",
+          "text": "총합, 합계."
+        },
+        {
+          "lang": "ko",
+          "text": "결합, 연합, 합병."
+        },
+        {
+          "lang": "ko",
+          "text": "법회, 廟會."
+        },
+        {
+          "lang": "ko",
+          "text": "골패(骨牌)의 패."
+        },
+        {
+          "lang": "ko",
+          "text": "(관직) 共同備禦."
+        }
+      ]
     }
   ]
 }
