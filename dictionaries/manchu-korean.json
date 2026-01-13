@@ -8,7 +8,7 @@
       "mnc",
       "ko"
     ],
-    "version": "1.0.0"
+    "version": "2026-01-13v1"
   },
   "entries": [
     {
@@ -242,7 +242,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(몽) 여동생. 妹."
+          "text": "[MN] 여동생. 妹."
         }
       ]
     },
@@ -469,6 +469,403 @@
           "text": "한가한, 일이 없는. 임관(任官)하지 않고 한거(閑居)하는."
         }
       ]
+    },
+    {
+      "id": 30,
+      "headword": "abida",
+      "romanization": "ABIDA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "[SA] amita. 阿彌陀."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "headword": "abide",
+      "romanization": "ABIDE",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "어느 곳으로, 어디로, 어디에, 어디에서. =`aibide`."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "headword": "abidzi",
+      "romanization": "ABIDZI",
+      "meanings": []
+    },
+    {
+      "id": 33,
+      "headword": "abimbi",
+      "romanization": "ABIMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "살이 붓다. =`aibimbi`."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "headword": "abishvn",
+      "romanization": "ABISHVN",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "부은, 부어오른. =`aibishvn`."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "headword": "abisik",
+      "romanization": "ABISIK",
+      "meanings": []
+    },
+    {
+      "id": 36,
+      "headword": "abixaha dabixaha",
+      "romanization": "ABIXAHA DABIXAHA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "서로 간섭하지 않는, 관계가 먼, 냉담한, 무정한."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "headword": "abka",
+      "romanization": "ABKA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "하늘, 하느님."
+        },
+        {
+          "lang": "ko",
+          "text": "가장 높은 곳."
+        },
+        {
+          "lang": "ko",
+          "text": "날씨."
+        },
+        {
+          "lang": "ko",
+          "text": "놀라거나 괴이한 일을 당했을 때 하는 말."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "headword": "abkambi",
+      "romanization": "ABKAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(`agambi`의 고어형) 비가 내리다, 비가 오다."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "headword": "abkana",
+      "romanization": "ABKANA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(abka+na) 하늘땅, 하늘땅만큼 많음, 무한히 많음. (아이들이 하는 말.)"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "headword": "abkasaru",
+      "romanization": "ABKASARU",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "하늘이 안다, 하늘이 보고 있다. (나쁜 짓을 질책하는 말.) =`abka saru`."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "headword": "abkawaru",
+      "romanization": "ABKAWARU",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "천벌을 받을 놈, 뒈질 놈. (욕하는 말.) =`abka waru`, `abka awreo`."
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "headword": "absa",
+      "romanization": "ABSA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "선박의 이물에 물고기잡이용 후릿그물을 치기 위해 대어 놓은 판자 형태의 나무."
+        },
+        {
+          "lang": "ko",
+          "text": "자작나무 껍질로 만든 통. =`uliyen`."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "headword": "absalan",
+      "romanization": "ABSALAN",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "가축 앞발의 넓적다리뼈. =`absilan`."
+        },
+        {
+          "lang": "ko",
+          "text": "팔의 윗동 뼈. =`absilan`."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "headword": "absambi",
+      "romanization": "ABSAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(-ka) 여위다."
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "headword": "absari",
+      "romanization": "ABSARI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "여윔, 수척함."
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "headword": "absi",
+      "romanization": "ABSI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "어디, 어디로."
+        },
+        {
+          "lang": "ko",
+          "text": "몹시, 어떻게, 어쩌니, 어찌 그리, 가장."
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "headword": "absilan",
+      "romanization": "ABSILAN",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "가축 앞발의 넓적다리뼈. =`absalan`."
+        },
+        {
+          "lang": "ko",
+          "text": "팔의 윗동 뼈. =`absalan`."
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "headword": "absimbi",
+      "romanization": "ABSIMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(-ka) 마르다, 여위다. =`absambi`."
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "headword": "abtajambi",
+      "romanization": "ABTAJAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "물건이 깨져 떨어지다."
+        },
+        {
+          "lang": "ko",
+          "text": "화살의 깃이 떨어져 나가다."
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "headword": "abtalabumbi",
+      "romanization": "ABTALABUMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "꺾다, 나뭇가지를 치다, 나뭇가지를 다듬다. =`abdambi`, `abdalambi`."
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "headword": "abtalambi",
+      "romanization": "ABTALAMBI",
+      "meanings": []
+    },
+    {
+      "id": 52,
+      "headword": "abtarambi",
+      "romanization": "ABTARAMBI",
+      "meanings": []
+    },
+    {
+      "id": 53,
+      "headword": "abtakvlambi",
+      "romanization": "ABTAKVLAMBI",
+      "meanings": []
+    },
+    {
+      "id": 54,
+      "headword": "abu",
+      "romanization": "ABU",
+      "meanings": []
+    },
+    {
+      "id": 55,
+      "headword": "abuci",
+      "romanization": "ABUCI",
+      "meanings": []
+    },
+    {
+      "id": 56,
+      "headword": "abuha",
+      "romanization": "ABUHA",
+      "meanings": []
+    },
+    {
+      "id": 57,
+      "headword": "abulimbi",
+      "romanization": "ABULIMBI",
+      "meanings": []
+    },
+    {
+      "id": 58,
+      "headword": "abuna",
+      "romanization": "ABUNA",
+      "meanings": []
+    },
+    {
+      "id": 59,
+      "headword": "aburambi",
+      "romanization": "ABURAMBI",
+      "meanings": []
+    },
+    {
+      "id": 60,
+      "headword": "aburanambi",
+      "romanization": "ABURANAMBI",
+      "meanings": []
+    },
+    {
+      "id": 61,
+      "headword": "aburi",
+      "romanization": "ABURI",
+      "meanings": []
+    },
+    {
+      "id": 62,
+      "headword": "aburingge",
+      "romanization": "ABURINGGE",
+      "meanings": []
+    },
+    {
+      "id": 63,
+      "headword": "acabubumbi",
+      "romanization": "ACABUBUMBI",
+      "meanings": []
+    },
+    {
+      "id": 64,
+      "headword": "acabuki",
+      "romanization": "ACABUKI",
+      "meanings": []
+    },
+    {
+      "id": 65,
+      "headword": "acabukv",
+      "romanization": "ACABUKV",
+      "meanings": []
+    },
+    {
+      "id": 66,
+      "headword": "acabumbi",
+      "romanization": "ACABUMBI",
+      "meanings": []
+    },
+    {
+      "id": 67,
+      "headword": "acabun",
+      "romanization": "ACABUN",
+      "meanings": []
+    },
+    {
+      "id": 68,
+      "headword": "acabungga",
+      "romanization": "ACABUNGGA",
+      "meanings": []
+    },
+    {
+      "id": 69,
+      "headword": "acalambi",
+      "romanization": "ACALAMBI",
+      "meanings": []
+    },
+    {
+      "id": 70,
+      "headword": "acambi",
+      "romanization": "ACAMBI",
+      "meanings": []
+    },
+    {
+      "id": 71,
+      "headword": "acamjabumbi",
+      "romanization": "ACAMJABUMBI",
+      "meanings": []
+    },
+    {
+      "id": 72,
+      "headword": "acamjambi",
+      "romanization": "ACAMJAMBI",
+      "meanings": []
+    },
+    {
+      "id": 73,
+      "headword": "acamjangga",
+      "romanization": "ACAMJANGGA",
+      "meanings": []
+    },
+    {
+      "id": 74,
+      "headword": "acan",
+      "romanization": "ACAN",
+      "meanings": []
     }
   ]
 }
