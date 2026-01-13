@@ -328,7 +328,10 @@
         }
 
         function formatMeaning(text) {
-            return text.replace(/`([^`]+)`/g, '<em>$1</em>');
+            // =something. 패턴을 👉 something으로 변환 (마지막 . 제외)
+            text = text.replace(/=([^]+?)\./g, '👉 $1');
+            // 나머지 `something` 패턴을 이탤릭체로 변환
+            return text.replace(/`([^`]+?)`/g, '<em>$1</em>');
         }
 
         function displayAllEntries() {
