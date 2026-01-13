@@ -13,6 +13,7 @@
     <div class="container">
         <header>
             <h1>📖 만주어 사전</h1>
+            <h2>ᠮᠠᠨᠵᡠ ᠰᠣᠯᡥᠣ ᡤᡳᠰᡠᠨ ᡳ ᠪᡠᠯᡝᡴᡠ ᠪᡳᡨᡥᡝ</h2>
             <p>Manchu Dictionary</p>
         </header>
 
@@ -20,7 +21,8 @@
 
         <div class="search-section">
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="" autocomplete="off" oninput="updateSearchPreview()">
+                <input type="text" id="searchInput" placeholder="검색어를 입력하세요." autocomplete="off"
+                    oninput="updateSearchPreview()">
                 <button onclick="search()">검색</button>
             </div>
 
@@ -67,10 +69,10 @@
             const previewCard = document.getElementById('previewCard');
 
             if (manchuInputMode) {
-                searchInput.placeholder = "";
+                searchInput.placeholder = "묄렌도르프(Möllendorff) 전사법에 v와 x를 사용합니다.";
                 // Input value preserved
             } else {
-                searchInput.placeholder = "";
+                searchInput.placeholder = "검색어를 입력하세요.";
                 // Input value preserved
                 previewCard.classList.remove('active');
             }

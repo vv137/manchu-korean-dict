@@ -10,5 +10,465 @@
     ],
     "version": "1.0.0"
   },
-  "entries": []
+  "entries": [
+    {
+      "id": 1,
+      "headword": "a",
+      "romanization": "A",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "양(陽). 음양(陰陽)의 양(陽)."
+        },
+        {
+          "lang": "ko",
+          "text": "자아(字牙). 만주 문자에서 한쪽으로 튀어나온 획."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "A E",
+          "translation_ko": "양(陽)과 음(陰)."
+        },
+        {
+          "manchu": "A -I BUKDAN",
+          "translation_ko": "접은 종이의 바깥 면, 접은 종이의 표면. 양구(陽扣)."
+        },
+        {
+          "manchu": "A -I JALAN",
+          "translation_ko": "이 세상, 현세. 陽世."
+        },
+        {
+          "manchu": "A -I TON",
+          "translation_ko": "양수. 陽數."
+        },
+        {
+          "manchu": "A JIJUN",
+          "translation_ko": "양각 글자. 陽文."
+        },
+        {
+          "manchu": "A JIJUN -I ACANGGA",
+          "translation_ko": "양각 글자의 합부(合符). 陽文合符. 구리로 만들어 內府에 보관하며 밤에 城門을 통행하기 위해 휴대함."
+        },
+        {
+          "manchu": "A JILGAN",
+          "translation_ko": "[음악] 양성(陽聲). 十二律가운데서 六律의 소리."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "headword": "a",
+      "romanization": "A",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "아. 어. 놀라거나 대답할 때 내는 소리."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "A FA SERE ONGGOLO",
+          "translation_ko": "A'니 'FA'니 하기 전에, 누구보다 먼저, 가장 먼저. =`afanggala`."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "headword": "a",
+      "romanization": "A",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "亞의 음사."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "A U",
+          "translation_ko": "[LA] AVE. AVE MARIA(亞物瑪利亞)의 AVE."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "headword": "a si",
+      "romanization": "A SI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "구구. (닭을 쫓거나 부를 때 내는 소리.)"
+        },
+        {
+          "lang": "ko",
+          "text": "왁자지껄. (시끄러운 분위기를 내는 소리.)"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "A SI SEME",
+          "translation_ko": "구구 하며. / 왁자지껄하게."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "headword": "a ta",
+      "romanization": "A TA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "구구. (닭을 쫓거나 부를 때 내는 소리.)"
+        },
+        {
+          "lang": "ko",
+          "text": "왁자지껄. (시끄러운 분위기를 내는 소리.)"
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "A TA SEME",
+          "translation_ko": "구구 하며. / 왁자지껄하게."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "headword": "aa",
+      "romanization": "AA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "예예, 그래그래. 놀라거나 대답할 때 내는 소리."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "headword": "aba",
+      "romanization": "ABA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "몰이사냥, 포위 수렵. 圍獵."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABA ABALAMBI",
+          "translation_ko": "몰이사냥하다, 몰이사냥의 포위 대열을 배치하다. 打圍."
+        },
+        {
+          "manchu": "ABA BARGIYAMBI",
+          "translation_ko": "몰이사냥을 끝내다, 몰이사냥의 포위 대열을 거두어들이다. 收圍."
+        },
+        {
+          "manchu": "ABA DE TUCIBUMBI",
+          "translation_ko": "몰이사냥에 보내다."
+        },
+        {
+          "manchu": "ABA HOIHAN",
+          "translation_ko": "수렵장, 사냥터. 圍場."
+        },
+        {
+          "manchu": "ABA -I BA",
+          "translation_ko": "수렵장, 사냥터. 圍場."
+        },
+        {
+          "manchu": "ABA SAHA",
+          "translation_ko": "몰이사냥. =`aba`."
+        },
+        {
+          "manchu": "ABA SARAMBI",
+          "translation_ko": "포위 대열을 펼치다, 사냥의 포위 대열을 두 방향으로 벌려 가다. 撒圍."
+        },
+        {
+          "manchu": "ABA SINDAMBI",
+          "translation_ko": "포위 대열을 치다, 몰이사냥의 포위 대열의 중앙부에서 양끝으로 한 사람씩 나와서 兩翼을 만들어 가다. 放圍."
+        },
+        {
+          "manchu": "ABA TUCIMBI",
+          "translation_ko": "몰이사냥을 가다."
+        },
+        {
+          "manchu": "ABA NIYALMA",
+          "translation_ko": "몰이사냥을 하는 사람."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "headword": "aba",
+      "romanization": "ABA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "어디, 어느 곳, 어디 있는가. =`aiba`."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "BEILE ABA",
+          "translation_ko": "Beile는 어디 있는가?"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "headword": "abaga",
+      "romanization": "ABAGA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "阿巴噶. 내몽고의 部의 하나. 청대 2旗로 편제됨. Abaqa ayimaγ. 몽골어로 '부계 혈통을 잇는 사람'이라는 뜻에서 유래함. 칭기스칸의 동생 벨구테이(別里古台, Belgutei)의 후손임."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "headword": "abaganar",
+      "romanization": "ABAGANAR",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "阿巴哈納爾. 내몽고의 部의 하나. 청대 2旗로 편제됨. Abaqanar ayimaγ. 만주어로 Abahanar라고도 함. 칭기스칸의 동생 벨구테이(別里古台, Belgutei)의 후손임."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "headword": "abai",
+      "romanization": "ABAI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(몽) 여동생. 妹."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "headword": "Abai",
+      "romanization": "ABAI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(인명) 鎮國勤敏公 阿拜. 청태조의 3남. 清史稿/卷217 참고."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "headword": "abalabumbi",
+      "romanization": "ABALABUMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(`abalambi`의 사동형) 몰이사냥으 하게 하다."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "headword": "abalahai",
+      "romanization": "ABALAHAI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(`abalambi`의 부사형) 몰이사냥하면서."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "headword": "abalambi",
+      "romanization": "ABALAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "몰이사냥하다."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABALAME GENEMBI",
+          "translation_ko": "몰이사냥하러 가다."
+        },
+        {
+          "manchu": "ABALAME YABUMBI",
+          "translation_ko": "몰이사냥하러 가다."
+        },
+        {
+          "manchu": "KAME ABALAMBI",
+          "translation_ko": "겨울 사냥을 하다. 冬狩."
+        },
+        {
+          "manchu": "SONJOME ABALAMBI",
+          "translation_ko": "봄에 임신하지 않은 짐승을 골라서 사냥하다, 봄 사냥을 하다. 春蒐."
+        },
+        {
+          "manchu": "ULUN GIDAMBI",
+          "translation_ko": "여름 사냥을 하다, 여름에 곡물을 황폐하게 만드는 짐승을 잡다. 夏苗."
+        },
+        {
+          "manchu": "WAME ABALAMBI",
+          "translation_ko": "가을 사냥을 하다. 秋獮. =`sahadambi`."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "headword": "abalanambi",
+      "romanization": "ABALANAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "몰이사냥하러 가다, 가서 물이사냥하다."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "headword": "abalandumbi",
+      "romanization": "ABALANDUMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "일제히 몰이사냥하다. =`abalanumbi`."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "headword": "abalanjimbi",
+      "romanization": "ABALANJIMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "몰이사냥하러 오다, 와서 몰이사냥하다."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "headword": "abalanumbi",
+      "romanization": "ABALANUMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "일제히 몰이사냥하다. =`abalandumbi`."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "headword": "Abatai",
+      "romanization": "ABATAI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(인명) 饒餘敏郡王 阿巴泰. 청태조의 7남. 清史稿/卷217 참고."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "headword": "abdaha",
+      "romanization": "ABDAHA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "잎. 葉."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "headword": "abdahanambi",
+      "romanization": "ABDAHANAMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "싹트다, 싹이 나다."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "headword": "abdalabumbi",
+      "romanization": "ABDALABUMBI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(`abdalambi`의 사동형) 꺾어 취하게 하다."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "headword": "abdangga",
+      "romanization": "ABDANGGA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "책(冊). 책봉(冊封)하거나 조서(詔書)를 내릴 때 사용하며 접은 형태임."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "headword": "abdangga",
+      "romanization": "ABDANGGA",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "잎이 큰."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "headword": "abdarakv",
+      "romanization": "ABDARAKV",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(`abdambi`의 부정형) 꺾지 않다, 꺾지 않는."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "headword": "abdari",
+      "romanization": "ABDARI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(식물) 상수리나무. 婆蘿柯, 柞樹."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "headword": "abdari",
+      "romanization": "ABDARI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "(지명) 阿布達里崗. `abdari ala`. 압록강의 북쪽에 위치함. 랴오닝성 환런 만족 자치현에 위치함."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "headword": "abgari",
+      "romanization": "ABGARI",
+      "meanings": [
+        {
+          "lang": "ko",
+          "text": "한가한, 일이 없는. 임관(任官)하지 않고 한거(閑居)하는."
+        }
+      ]
+    }
+  ]
 }

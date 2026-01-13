@@ -63,7 +63,7 @@ function convertLatinToManchu(latinText) {
         .replaceAll('dz', '\u186F') // ᡯ
         .replaceAll('..', '\u1809') // ᠉ (Must be before single '.')
         .replaceAll('.', '\u1808') // ᠈
-        // .replaceAll(' i', '-i'); // Contextual rule
+        .replaceAll(' -i', '-i'); // Contextual rule
 
     // Stage 2: Single-character mapping
     let manchuText = "";

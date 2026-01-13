@@ -37,6 +37,16 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+header h2 {
+    font-family: 'Noto Sans Mongolian', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    /* writing-mode: vertical-lr; */
+    text-orientation: mixed;
+    direction: ltr;
+    display: inline-block;
+}
+
 header p {
     font-size: 1.1em;
     opacity: 0.9;
