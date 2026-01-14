@@ -38,6 +38,7 @@ function convertLatinToManchu(latinText) {
         'R': '\u1870', // ᡰ
         'I': '\u185F', // MONGOLIAN LETTER SIBE I
         ',': '\u1808', // Manchu Comma (᠈)
+        '.': '\u1809', // Manchu Period (᠉)
         '_': '\u180E', // Mongolian Nirugu (᠎)
         "'": '\u180B', // MONGOLIAN FREE VARIATION SELECTOR ONE
         '"': '\u180C', // MONGOLIAN FREE VARIATION SELECTOR TWO
