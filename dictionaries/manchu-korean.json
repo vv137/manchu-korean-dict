@@ -380,6 +380,32 @@
           "lang": "ko",
           "text": "잎. 葉."
         }
+      ],
+      "examples": [
+        {
+          "manchu": "ABDAHA AISIN",
+          "translation_ko": "평평하게 편 金. 葉子金."
+        },
+        {
+          "manchu": "ABDAHA EFEN",
+          "translation_ko": "여러 종류의 나뭇잎을 가루 내어 넣거나 나뭇잎으로 감싸서 찐 떡. 葉餑餑."
+        },
+        {
+          "manchu": "ABDAHA FIK SEME",
+          "translation_ko": "잎이 빽빽하게."
+        },
+        {
+          "manchu": "ABDAHA GARGAN",
+          "translation_ko": "잎과 가지. 葉枝."
+        },
+        {
+          "manchu": "ABDAHA -I FISA",
+          "translation_ko": "잎꼭지, 잎자루, 잎의 꼭지 부분. 葉柄."
+        },
+        {
+          "manchu": "EMU ABDAHAI GESE CUWAN",
+          "translation_ko": "一葉片舟, 한 나뭇잎 같은 배."
+        }
       ]
     },
     {
@@ -390,6 +416,12 @@
         {
           "lang": "ko",
           "text": "싹트다, 싹이 나다."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABDAHANAME BANJIHA",
+          "translation_ko": "잎이 나서 자란, 잎이 나서 자랐다."
         }
       ]
     },
@@ -413,6 +445,28 @@
           "lang": "ko",
           "text": "책(冊). 책봉(冊封)하거나 조서(詔書)를 내릴 때 사용하며 접은 형태임."
         }
+      ],
+      "examples": [
+        {
+          "manchu": "ABDANGGA AFAHA",
+          "translation_ko": "책의 쪽, page."
+        },
+        {
+          "manchu": "ABDANGGA BITHE",
+          "translation_ko": "책서 (冊書)."
+        },
+        {
+          "manchu": "ABDANGGA FUNGNEHEN",
+          "translation_ko": "책(冊), 책봉(冊封)하는 문서. 금박이나 황색으로 표지를 만듦."
+        },
+        {
+          "manchu": "ABDANGGA FUNGNEMBI",
+          "translation_ko": "책봉(冊封)하다."
+        },
+        {
+          "manchu": "ABDANGGA ILETULEHEN",
+          "translation_ko": "책(冊), 책봉(冊封)하는 문서."
+        }
       ]
     },
     {
@@ -423,6 +477,12 @@
         {
           "lang": "ko",
           "text": "잎이 큰."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABDANGGA MOO",
+          "translation_ko": "(식물) 종려나무. 포규(蒲葵)."
         }
       ]
     },
@@ -467,6 +527,12 @@
         {
           "lang": "ko",
           "text": "한가한, 일이 없는. 임관(任官)하지 않고 한거(閑居)하는."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABGARI BANJIMBI",
+          "translation_ko": "한거하며 지내다, 퇴직하여 한거하다. =`baisin banjimbi`."
         }
       ]
     },
@@ -578,7 +644,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(abka+na) 하늘땅, 하늘땅만큼 많음, 무한히 많음. (아이들이 하는 말.)"
+          "text": "(`abka+na`) 하늘땅, 하늘땅만큼 많음, 무한히 많음. (아이들이 하는 말.)"
         }
       ]
     },
@@ -641,7 +707,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(-ka) 여위다."
+          "text": "(`-ka`) 여위다."
         }
       ]
     },
@@ -693,7 +759,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(-ka) 마르다, 여위다. =`absambi`."
+          "text": "(`-ka`) 마르다, 여위다. =`absambi`."
         }
       ]
     },
@@ -778,7 +844,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(abka+jamuci) 天葵花. =`abuci ilha`."
+          "text": "(`abka+jamuci`) 天葵花. =`abuci ilha`."
         }
       ]
     },
@@ -878,7 +944,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(acabumbi의 사동형) 합하게 하다, 합치게 하다, 영합하게 하다, 모으게 하다."
+          "text": "(`acabumbi`의 사동형) 합하게 하다, 합치게 하다, 영합하게 하다, 모으게 하다."
         }
       ]
     },
@@ -889,7 +955,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(acabumbi의 희망형) 합하자, 합하고 싶다, 대조하고 싶다, 영합하고 싶다."
+          "text": "(`acabumbi`의 희망형) 합하자, 합하고 싶다, 대조하고 싶다, 영합하고 싶다."
         },
         {
           "lang": "ko",
@@ -915,7 +981,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(acambi의 사동형) 만나게 하다, 회견(會見)시키다."
+          "text": "(`acambi`의 사동형) 만나게 하다, 회견(會見)시키다."
         },
         {
           "lang": "ko",
@@ -1042,7 +1108,7 @@
       "meanings": [
         {
           "lang": "ko",
-          "text": "(acamjambi의 피동형/사동형) 집합되다, 모으다, 집합시키다, 한곳으로 모이게 하다."
+          "text": "(`acamjambi`의 피동형/사동형) 집합되다, 모으다, 집합시키다, 한곳으로 모이게 하다."
         }
       ]
     },
