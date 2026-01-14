@@ -289,7 +289,7 @@
                             ${convertedManchu ? `<div class="example-manchu-wrapper"><div class="example-manchu">${highlightText(convertedManchu, searchTerm)}</div></div>` : ''}
                             <div class="example-content">
                                 ${manchuText ? `<div class="example-latin">${highlightText(manchuText, searchTerm)}</div>` : ''}
-                                ${translationText ? `<div class="example-translation">→ ${highlightText(translationText, searchTerm)}</div>` : ''}
+                                ${translationText ? `<div class="example-translation">${formatTranslation(highlightText(translationText, searchTerm))}</div>` : ''}
                             </div>
                         </div>
                     `;
@@ -328,6 +328,13 @@
         }
 
         function formatMeaning(text) {
+            // =something. 패턴을 👉 something으로 변환 (마지막 . 제외)
+            text = text.replace(/=([^]+?)\./g, '👉 $1');
+            // 나머지 `something` 패턴을 이탤릭체로 변환
+            return text.replace(/`([^`]+?)`/g, '<em>$1</em>');
+        }
+
+        function formatTranslation(text) {
             // =something. 패턴을 👉 something으로 변환 (마지막 . 제외)
             text = text.replace(/=([^]+?)\./g, '👉 $1');
             // 나머지 `something` 패턴을 이탤릭체로 변환
