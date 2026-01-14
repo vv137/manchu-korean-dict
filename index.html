@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header onclick="resetPage()" style="cursor: pointer;" title="초기화">
             <h1>📖 만주어 사전</h1>
             <h2>ᠮᠠᠨᠵᡠ ᠰᠣᠯᡥᠣ ᡤᡳᠰᡠᠨ ᡳ ᠪᡠᠯᡝᡴᡠ ᠪᡳᡨᡥᡝ</h2>
             <p>Manchu Dictionary</p>
@@ -106,8 +106,13 @@
                 const loadPromises = list.dictionaries.map(async (dictInfo) => {
                     const response = await fetch(`dictionaries/${dictInfo.file}`);
                     const data = await response.json();
+                    const dictId = data.meta?.id || dictInfo.id;
                     console.log(`Loaded dictionary: ${data.meta?.name || dictInfo.id} (${data.entries.length} entries)`);
-                    return data.entries;
+                    // 각 entry에 고유 globalId 부여: 사전ID_항목ID
+                    return data.entries.map(entry => ({
+                        ...entry,
+                        globalId: `${dictId}_${entry.id}`
+                    }));
                 });
 
                 const allEntries = await Promise.all(loadPromises);
@@ -122,10 +127,12 @@
                 renderTagFilters();
                 updateStats();
                 search(); // '한국어만' 기본 필터 적용하여 검색
+                return true;
             } catch (error) {
                 console.error('데이터 로드 실패:', error);
                 document.getElementById('results').innerHTML =
                     '<div class="no-results"><div class="no-results-icon">❌</div><p>데이터를 불러올 수 없습니다.</p></div>';
+                return false;
             }
         }
 
@@ -305,8 +312,11 @@
 
             const manchuHeadword = entry.headword ? convertLatinToManchu(entry.headword) : '';
 
+            const entryId = entry.globalId || entry.id || '';
+
             return `
-                <div class="entry-card">
+                <div class="entry-card" id="entry-${entryId}">
+                    <button class="copy-link-btn" onclick="copyEntryLink('${entryId}')" title="링크 복사">🔗</button>
                     <div class="headword-section">
                         ${manchuHeadword ? `<div class="headword-manchu">${highlightText(manchuHeadword, searchTerm)}</div>` : ''}
                     </div>
@@ -350,8 +360,67 @@
             stats.textContent = `📚 총 ${dictionaryData.length}개의 항목`;
         }
 
+        function copyEntryLink(entryId) {
+            const url = `${window.location.origin}${window.location.pathname}?id=${entryId}`;
+            navigator.clipboard.writeText(url).then(() => {
+                // 복사 성공 시 버튼 피드백
+                const btn = document.querySelector(`#entry-${entryId} .copy-link-btn`);
+                if (btn) {
+                    const originalText = btn.textContent;
+                    btn.textContent = '✓';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('copied');
+                    }, 1500);
+                }
+            }).catch(err => {
+                console.error('클립보드 복사 실패:', err);
+            });
+        }
+
+        function resetPage() {
+            // URL 파라미터 제거
+            window.history.replaceState({}, '', window.location.pathname);
+            // 검색 입력 초기화
+            document.getElementById('searchInput').value = '';
+            // 검색 실행 (전체 목록 표시)
+            search();
+        }
+
+        function handleUrlParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchQuery = urlParams.get('search');
+            const targetId = urlParams.get('id');
+
+            // search 파라미터 처리
+            if (searchQuery) {
+                document.getElementById('searchInput').value = searchQuery;
+                search();
+            }
+
+            // id 파라미터 처리 (특정 항목으로 스크롤)
+            if (targetId) {
+                const entryId = `entry-${targetId}`;
+                const targetElement = document.getElementById(entryId);
+
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        targetElement.classList.add('highlighted');
+
+                        setTimeout(() => {
+                            targetElement.classList.remove('highlighted');
+                        }, 3000);
+                    }, 100);
+                }
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            loadDictionary();
+            loadDictionary().then(() => {
+                handleUrlParams();
+            });
 
             document.getElementById('searchInput').addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
