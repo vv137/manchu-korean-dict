@@ -8,7 +8,7 @@
       "mnc",
       "ko"
     ],
-    "version": "1.0.0"
+    "version": "20260114v1"
   },
   "entries": [
     {
@@ -545,6 +545,12 @@
           "lang": "ko",
           "text": "[SA] amita. 阿彌陀."
         }
+      ],
+      "examples": [
+        {
+          "manchu": "ABIDA FUCIHI",
+          "translation_ko": "아미타 부처. 아미타불(阿彌陀佛)."
+        }
       ]
     },
     {
@@ -555,6 +561,12 @@
         {
           "lang": "ko",
           "text": "어느 곳으로, 어디로, 어디에, 어디에서. =`aibide`."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABIDE BI",
+          "translation_ko": "어디에 있는가?"
         }
       ]
     },
@@ -623,6 +635,92 @@
         {
           "lang": "ko",
           "text": "놀라거나 괴이한 일을 당했을 때 하는 말."
+        }
+      ],
+      "examples": [
+        {
+          "manchu": "ABKA BE ALIRE MEDERI BE AKVNARA ERDEMU",
+          "translation_ko": ""
+        },
+        {
+          "manchu": "ABKA BE GINGGULERE YAMUN",
+          "translation_ko": "(아문) 欽天監. 명청대에 천문을 관측하는 기관."
+        },
+        {
+          "manchu": "ABKA BE GINGGULERE YAMUN -I ALIHA HAFAN",
+          "translation_ko": ""
+        },
+        {
+          "manchu": "ABKA BE GINGGULERE YAMUN -I ILHI HAFAN",
+          "translation_ko": ""
+        },
+        {
+          "manchu": "ABKA BE HUKXEME NA BE FEKURE",
+          "translation_ko": ""
+        },
+        {
+          "manchu": "AKA BE UKCIBUME NIYALMA BE UXABUMBI",
+          "translation_ko": ""
+        },
+        {
+          "manchu": "ABKA BE WECEMBI",
+          "translation_ko": "하늘에 제사지내다."
+        },
+        {
+          "manchu": "ABKA DE GASAME NIYALMA BE WAKALAMBI",
+          "translation_ko": "하늘을 원망하고 사람을 탓한다. 怨天尤人."
+        },
+        {
+          "manchu": "ABKA DE JALBARIME, USIHA DE JUKTEME",
+          "translation_ko": "(공문) 하늘에 고하고 북두칠성(北斗七星)에 배례(拜禮)함. 告天拜斗."
+        },
+        {
+          "manchu": "ABKA DE SUCUNARA GVNIN",
+          "translation_ko": "하늘을 찌를 듯한 뜻. 沖天之志."
+        },
+        {
+          "manchu": "ABKA DUSIHIYEN OHO",
+          "translation_ko": "하늘이 어두워졌다."
+        },
+        {
+          "manchu": "ABKA EHEREHE",
+          "translation_ko": "하늘이 변했다, 날씨가 나빠졌다."
+        },
+        {
+          "manchu": "ABKA FARHVN OHO",
+          "translation_ko": "하늘이 어두워졌다."
+        },
+        {
+          "manchu": "ABKA FUNDEHUN",
+          "translation_ko": "날씨가 맑은, 하늘이 맑은."
+        },
+        {
+          "manchu": "ABKA GENGGIYEN SUKDUN BOLGO",
+          "translation_ko": "하늘이 맑고 기운이 청명한. 天朗氣淸."
+        },
+        {
+          "manchu": "ABKA GEREKE",
+          "translation_ko": "하늘이 맑았다, 날씨가 개었다."
+        },
+        {
+          "manchu": "ABKA GEREN GURUN BE UJIKIN SEME SINDAHA GENGGIYEN HAN",
+          "translation_ko": "天命恩養諸國英明汗, 하늘이 여러 나라를 기르라 하여 임명하신 英明한 汗. 1616년에 제정한 청태조의 존호."
+        },
+        {
+          "manchu": "ABKA HEYENEHEBI",
+          "translation_ko": "하늘에 구름이 약간 있다."
+        },
+        {
+          "manchu": "ABKA NA",
+          "translation_ko": "하늘과 땅, 천지, 건곤, 우주. 듬뿍, 잔뜩, 많이."
+        },
+        {
+          "manchu": "ABKA NA -I TON",
+          "translation_ko": "천지(天地)의 수(數)."
+        },
+        {
+          "manchu": "ABKA SARU",
+          "translation_ko": "하늘이 안다, 하늘이 보고 있다. 나쁜 짓을 질책하는 말."
         }
       ]
     },
